@@ -1,4 +1,4 @@
-:# _Wizards & Warlocks_
+# _Wizards & Warlocks_
 
 #### _Be a hero in this RPG adventure, 2020 ver 1.0_
 
