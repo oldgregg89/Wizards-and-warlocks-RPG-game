@@ -4,7 +4,6 @@ export class Character {
     this.health = 10;
     this.itemsbag = [];
     this.addCharacterProperties();
-    this.itemProperties();
   }
 
   addCharacterProperties() {
@@ -37,11 +36,12 @@ export class Character {
   }
 
   itemProperties() {
-    this.itemsbag.forEach(element => 
-      if (type === ("rogue" || "knight") {
-        this.attack += element.attack
-      })
-    }
+    this.itemsbag.forEach((element) => {
+      if (type === ("rogue" || "knight")) {
+        this.attack += element.attack;
+      }
+    });
+  }
 
   combatAction(Victim) {
     Victim.defense -= this.attack;
@@ -64,7 +64,7 @@ export class Character {
   }
 }
 
-export class sword {
+export class Sword {
   constructor() {
     this.attack = 4;
   }

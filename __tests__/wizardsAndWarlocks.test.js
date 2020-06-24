@@ -1,4 +1,4 @@
-import { Character, Badguy } from '../src/wizardsAndWarlocks.js'
+import { Character, Sword } from '../src/wizardsAndWarlocks.js'
 
 describe('Character', () => {
   let reusableCharacter;
@@ -7,14 +7,16 @@ describe('Character', () => {
   let reusableCharacter4;
   let reusableCharacter5;
   let reusableCharacter6;
+  let sword;
 
   beforeEach(() => {
     reusableCharacter = new Character("wizard");
     reusableCharacter2 = new Character("knight");
     reusableCharacter3 = new Character("rogue");
-    reusableCharacter4 = new Badguy("bandit");
-    reusableCharacter5 = new Badguy("goblin");
-    reusableCharacter6 = new Badguy("warlock");
+    reusableCharacter4 = new Character("bandit");
+    reusableCharacter5 = new Character("goblin");
+    reusableCharacter6 = new Character("warlock");
+    let sword = new Sword();
   });
 
   test('character object should have type "wizard", "knight", or "rogue"', () => {
@@ -63,4 +65,9 @@ describe('Character', () => {
     expect(reusableCharacter2.defense).toEqual(10);
     expect(reusableCharacter3.defense).toEqual(11);
   });
+
+  test('sword item will add to character attack rating', () => {
+    reusableCharacter2.itemsBag.push(sword);
+    expect(reusableCharacter2.itemProperties()).toEqual(7);
+  })
 });
