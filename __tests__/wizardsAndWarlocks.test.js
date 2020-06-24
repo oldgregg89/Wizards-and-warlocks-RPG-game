@@ -2,9 +2,13 @@ import { Character } from '../src/wizardsAndWarlocks.js'
 
 describe('Character', () => {
   let reusableCharacter;
+  let reusableCharacter2;
+  let reusableCharacter3;
 
   beforeEach(() => {
     reusableCharacter = new Character("wizard");
+    reusableCharacter2 = new Character("knight");
+    reusableCharacter3 = new Character("rogue");
   })
 
   test('character object should have type "wizard", "knight", or "rogue"', () => {
@@ -17,5 +21,12 @@ describe('Character', () => {
       expect(reusableCharacter.defense).toEqual(0);
       expect(reusableCharacter.special).toEqual(5);
   });
+
+  test('attributes of "knight"', () => {
+    expect(reusableCharacter2.health).toEqual(10);
+    expect(reusableCharacter2.attack).toEqual(3);
+    expect(reusableCharacter2.defense).toEqual(3);
+    expect(reusableCharacter2.special).toEqual(4);
+});
   
 })
