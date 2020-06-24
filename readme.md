@@ -3,7 +3,7 @@
 #### _Be a hero in this RPG adventure, 2020 ver 1.0_
 
 #### By _Ian Gregg & Kyle Hubbard_
-[Wizards-&-Warlocks](https://github.com/oldgregg89/rpg-Wizards-Warlocks)
+[Wizards-&-Warlocks](https://github.com/oldgregg89/Wizards-and-warlocks-RPG-game)
 
 ## Description
 
@@ -25,10 +25,11 @@ __
 
 | Behavior    | Input | Output |
 | :---------- | ----- | -----: |
-| action: attack | 'click' attack | damages the foe you are facing |
+| action: attack | 'click' attack | damages the foe you're facing |
 | action: talk | 'click' talk | You will go into dialog with individuals "unable to always talk in combat"  |
 | action: Special | 'click' Special | Special Abilities key to each class |
 | action: items | 'click' items | a menu pops up and you make a decision on which item to use |
+| action: choose path | 'click' direction | 
 
 
 
