@@ -10,17 +10,14 @@ export class Character {
       this.defense = 0 + this.health;
       this.attack = 3;
       this.special = 5;
-      // this.combat = 
     } else if (this.type === "knight") {
       this.defense = 3 + this.health;
       this.attack = 3;
-      this.special = 4;
-      // this.combat = -3 
+      this.special = 6;
     } else if (this.type === "rogue") {
       this.defense = 1 + this.health;
       this.attack = 2;
       this.special = 6;
-      //this.combat = 
     }
   }
 
@@ -28,7 +25,13 @@ export class Character {
     Victim.defense -= this.attack;
   }
   
+  //Perry attack
+  knightSpecial(){
+    this.defense += this.special
+  }
 }
+
+
 
 export class Badguy {
   

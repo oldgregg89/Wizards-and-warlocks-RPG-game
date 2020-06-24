@@ -26,7 +26,7 @@ describe('Character', () => {
     expect(reusableCharacter2.health).toEqual(10);
     expect(reusableCharacter2.attack).toEqual(3);
     expect(reusableCharacter2.defense).toEqual(13);
-    expect(reusableCharacter2.special).toEqual(4);
+    expect(reusableCharacter2.special).toEqual(6);
   });
 
   test('attributes of "rogue"', () => {
@@ -41,4 +41,8 @@ describe('Character', () => {
     expect(reusableCharacter3.defense).toEqual(8);
   });
   
+  test('knights special of parry adds to his defense' , () => {
+    reusableCharacter2.knightSpecial()
+    expect(reusableCharacter2.defense).toEqual(19)
+  })
 })
