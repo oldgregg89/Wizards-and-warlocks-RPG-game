@@ -17,6 +17,7 @@ export class Character {
     } else if (this.type === "rogue") {
       this.defense = 1 + this.health;
       this.attack = 2;
+      this.reverse = 7;
       this.special = 6;
     }
   }
@@ -34,6 +35,11 @@ export class Character {
   wizardSpecial(){
     this.attack += this.special
   }
+
+  rogueSpecial(attacker){
+    this.defense = 1 + this.health;
+    attacker.defense -= attacker.attack;
+  }
 }
 
 
@@ -41,4 +47,3 @@ export class Character {
 export class Badguy {
   
 }
-

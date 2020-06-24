@@ -9,7 +9,7 @@ describe('Character', () => {
     reusableCharacter = new Character("wizard");
     reusableCharacter2 = new Character("knight");
     reusableCharacter3 = new Character("rogue");
-  })
+  });
 
   test('character object should have type "wizard", "knight", or "rogue"', () => {
     expect(reusableCharacter.type).toEqual("wizard" || "knight" || "rogue")
@@ -44,10 +44,16 @@ describe('Character', () => {
   test('knights special of parry adds to his defense' , () => {
     reusableCharacter2.knightSpecial()
     expect(reusableCharacter2.defense).toEqual(19)
-  })
+  });
 
   test('wizard special of fireball will add his attack and special', () => {
     reusableCharacter.wizardSpecial()
     expect(reusableCharacter.attack).toEqual(8)
-  })
-})
+  });
+
+  test('Rogue special will reverse the attack of the opponent', () => {
+    reusableCharacter2.combatAction(reusableCharacter3);
+    reusableCharacter3.rogueSpecial(reusableCharacter2);
+    expect(reusableCharacter2.defense).toEqual(10);
+  });
+});
