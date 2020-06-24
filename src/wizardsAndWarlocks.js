@@ -2,10 +2,10 @@ export class Character {
   constructor(type) {
     this.type = type; 
     this.health = 10;
-    this.addCharacterProperties(this.type);
+    this.addCharacterProperties();
   }
 
-  addCharacterProperties(type) {
+  addCharacterProperties() {
     if (this.type === "wizard") {
       this.defense = 0 + this.health;
       this.attack = 3;
@@ -42,8 +42,24 @@ export class Character {
   }
 }
 
-
-
-export class Badguy {
+export class Badguy extends Character {
   
+  // constructor(type) {
+  //   this.type = type;
+  //   this.addCharacterProperties()
+  // }
+
+  // addCharacterProperties() {
+  //   if (this.type === "goblin") {
+  //     this.defense = 0 + this.health;
+  //     this.attack = 2;
+  //   } else if (this.type === "bandit") {
+  //     this.defense = 3 + this.health;
+  //     this.attack = 3;
+  //   } else if (this.type === "warlock") {
+  //     this.defense = 1 + this.health;
+  //     this.attack = 2;
+  //     this.special = 6;
+  //   }
+  // }
 }
