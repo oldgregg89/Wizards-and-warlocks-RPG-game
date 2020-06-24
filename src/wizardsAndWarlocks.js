@@ -23,6 +23,14 @@ export class Character {
       this.health = 6
       this.defense = 1 + this.health;
       this.attack = 2;
+    } else if (this.type === "bandit") {
+      this.health = 7
+      this.defense = 1 + this.health;
+      this.attack = 2;
+    } else if (this.type === "warlock") {
+      this.health = 14
+      this.defense = 3 + this.health;
+      this.attack = 4;
     }
   }
 
@@ -44,11 +52,4 @@ export class Character {
     this.defense = 1 + this.health;
     attacker.defense -= attacker.attack;
   }
-}
-
-export class Badguy extends Character {
-  
-  // constructor(type) {
-  //   this.health = 6
-  // }
 }

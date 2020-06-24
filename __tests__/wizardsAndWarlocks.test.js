@@ -17,10 +17,10 @@ describe('Character', () => {
   });
   
   test('attributes of "wizard"', () => {
-      expect(reusableCharacter.health).toEqual(10);
-      expect(reusableCharacter.attack).toEqual(3);
-      expect(reusableCharacter.defense).toEqual(10);
-      expect(reusableCharacter.special).toEqual(5);
+    expect(reusableCharacter.health).toEqual(10);
+    expect(reusableCharacter.attack).toEqual(3);
+    expect(reusableCharacter.defense).toEqual(10);
+    expect(reusableCharacter.special).toEqual(5);
   });
 
   test('attributes of "knight"', () => {
@@ -76,7 +76,4 @@ describe('Badguy', () => {
       expect(reusableCharacter5.type).toEqual("goblin")
     });
 
-  test('character object should have health value', () => {
-    expect(reusableCharacter5.health).toEqual(6)
-  });
 });
