@@ -4,12 +4,17 @@ describe('Character', () => {
   let reusableCharacter;
   let reusableCharacter2;
   let reusableCharacter3;
+  let reusableCharacter4;
+  let reusableCharacter5;
+  let reusableCharacter6;
 
   beforeEach(() => {
     reusableCharacter = new Character("wizard");
     reusableCharacter2 = new Character("knight");
     reusableCharacter3 = new Character("rogue");
-
+    reusableCharacter4 = new Badguy("bandit");
+    reusableCharacter5 = new Badguy("goblin");
+    reusableCharacter6 = new Badguy("warlock");
   });
 
   test('character object should have type "wizard", "knight", or "rogue"', () => {
@@ -58,22 +63,4 @@ describe('Character', () => {
     expect(reusableCharacter2.defense).toEqual(10);
     expect(reusableCharacter3.defense).toEqual(11);
   });
-
-});
-
-describe('Badguy', () => {
-  let reusableCharacter4;
-  let reusableCharacter5;
-  let reusableCharacter6;
-
-  beforeEach(() => {
-    reusableCharacter4 = new Badguy("bandit");
-    reusableCharacter5 = new Badguy("goblin");
-    reusableCharacter6 = new Badguy("warlock");
-  });
-  
-  test('character object should have type "goblin"', () => {
-      expect(reusableCharacter5.type).toEqual("goblin")
-    });
-
 });
