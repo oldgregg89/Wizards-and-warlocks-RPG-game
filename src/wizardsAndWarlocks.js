@@ -29,6 +29,11 @@ export class Character {
   knightSpecial(){
     this.defense += this.special
   }
+
+  //wizard fireball
+  wizardSpecial(){
+    this.attack += this.special
+  }
 }
 
 

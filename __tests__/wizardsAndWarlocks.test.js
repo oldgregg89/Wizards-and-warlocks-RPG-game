@@ -45,4 +45,9 @@ describe('Character', () => {
     reusableCharacter2.knightSpecial()
     expect(reusableCharacter2.defense).toEqual(19)
   })
+
+  test('wizard special of fireball will add his attack and special', () => {
+    reusableCharacter.wizardSpecial()
+    expect(reusableCharacter.attack).toEqual(8)
+  })
 })
