@@ -19,6 +19,10 @@ export class Character {
       this.attack = 2;
       this.reverse = 7;
       this.special = 6;
+    } else if (this.type === "goblin") {
+      this.health = 6
+      this.defense = 1 + this.health;
+      this.attack = 2;
     }
   }
 
@@ -45,21 +49,6 @@ export class Character {
 export class Badguy extends Character {
   
   // constructor(type) {
-  //   this.type = type;
-  //   this.addCharacterProperties()
-  // }
-
-  // addCharacterProperties() {
-  //   if (this.type === "goblin") {
-  //     this.defense = 0 + this.health;
-  //     this.attack = 2;
-  //   } else if (this.type === "bandit") {
-  //     this.defense = 3 + this.health;
-  //     this.attack = 3;
-  //   } else if (this.type === "warlock") {
-  //     this.defense = 1 + this.health;
-  //     this.attack = 2;
-  //     this.special = 6;
-  //   }
+  //   this.health = 6
   // }
 }

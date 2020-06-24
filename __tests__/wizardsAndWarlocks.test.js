@@ -72,7 +72,11 @@ describe('Badguy', () => {
     reusableCharacter6 = new Badguy("warlock");
   });
   
-  test('character object should have type "goblin" or "bandit"', () => {
+  test('character object should have type "goblin"', () => {
       expect(reusableCharacter5.type).toEqual("goblin")
     });
+
+  test('character object should have health value', () => {
+    expect(reusableCharacter5.health).toEqual(6)
+  });
 });
