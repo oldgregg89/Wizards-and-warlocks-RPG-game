@@ -36,11 +36,13 @@ export class Character {
   }
 
   itemProperties() {
-    this.itemsBag.forEach((element) => {
-      if (element.kind === "weapon") {
-        this.attack += element.damage;
-      }
-    });
+
+    return this.itemsBag[0].kind;
+    // this.itemsBag.forEach((element) => {
+    //   if (element.kind === "weapon") {
+    //     this.attack += element.damage;
+    //   }
+    // });
   }
 
   combatAction(Victim) {
