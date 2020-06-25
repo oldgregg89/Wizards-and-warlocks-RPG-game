@@ -4,18 +4,34 @@
 } */
 
 body {
-  /* color: red */
-  
+  text-align: center;
 }
 
-/* #background {
+#content {
+  position: relative;
+  top: 20vh;
+}
+
+#intro {
+  top: 10vh;
+}
+
+#background {
   background-image: url(../assets/Title.jpg);
   background-position: right;
   height: 100vh;
   width: auto;
   background-repeat: no-repeat;
-} */
+}
 
 #name {
-  
+
+}
+
+#word-of-warning {
+  display: none;
+}
+
+#Rothenburg {
+  display: none;
 }

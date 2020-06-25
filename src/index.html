@@ -7,35 +7,45 @@
 </head>
 <body>
   <div id="background">
-    <div id="intro">
-      <h1>Wizards & Warlocks</h1>
-      <p>Welcome traveler, to the mythical lands of Erindale! Who might you be?</p>
-    </div>
-      <form id="character-build">
-        <div id="class">
-          <h3>Choose your Hero!</h3>
-          <input type="radio" id="knight" name="hero">
-          <label for="knight">"I am a Knight"</label>
-          <input type="radio" id="wizard" name="hero">
-          <label for="wizard">"I am a Wizard"</label>
-          <input type="radio" id="rogue" name="hero">
-          <label for="rogue">"I am a Rogue"</label>
+    <div id="content">
+      <div id="build-form">
+        <div id="intro">
+          <h1>Wizards & Warlocks</h1>
+          <p>Welcome traveler, to the mythical lands of Erindale! Who might you be?</p>
         </div>
-        <div id="name">
-          <h3>What is you name Hero?</h3>
-          <input type="text">
-          <button type = "submit" class = "btn btn-warning">Ready for Adventure!</button>
+          <form id="character-build">
+            <div id="name">
+              <h3>What is you name Hero?</h3>
+              <input type="text" id="name-input">
+            </div>
+            <div id="class">
+              <h3>Choose your Hero!</h3>
+              <input type="radio" id="knight" name="hero">
+              <label for="knight">"I am a Knight"</label>
+              <input type="radio" id="wizard" name="hero">
+              <label for="wizard">"I am a Wizard"</label>
+              <input type="radio" id="rogue" name="hero">
+              <label for="rogue">"I am a Rogue"</label>
+            </div>
+            <button type = "submit" class = "btn btn-warning">Ready for Adventure!</button>
+          </form>
         </div>
-      </form>
-    </div>
-    <div>
-      <p>How Impressive, <span id="name-span"></span>!</p>
-      <p>Well I can tell that you have certainly traveled far and I might go as far to guess that this is your first visit to Erindale. You must be warned, tread lightly, fortunes are easily made in Erindale and more easily lost. Right now you stand before the gates to the small hamlet of Rothenburg. The inhabitants are not used to world travelers such as yourself. Once you pass these gates, be ambitious but be warned!</p>
-      <button id="ok">Enter Town Gates</button>
-    </div>
-    <div>
-      <h1>The Hamlet of Rothenburg</h1>
-      <p>Scenario: </p>
+      </div>
+      <div id="word-of-warning">
+        <h2>How Impressive, <span class="name-span"></span>!</h2>
+        <p>I can tell that you have certainly traveled afar but I might go as far to guess that this is your first visit to Erindale. You must be warned, tread lightly, fortunes are easily made in Erindale and more easily lost. Right now you stand before the gates to the small hamlet of Rothenburg. The inhabitants are not used to world travelers such as yourself. Once you pass these gates, be ambitious but be warned!</p>
+        <button id="ok">Enter Town Gates</button>
+      </div>
+      <div id="Rothenburg">
+        <h1>The Hamlet of Rothenburg</h1>
+        <p>Scenario: <span class="name-span"></span> has passed the wooden gates to the humble village. the inhabitants, when they think they are able to steal a glance, seem to be corrupted with suspicion, however they pass <span class="name-span"></span> without a word</p>
+        <h4>Actions:</h4>
+        <ul>
+          <li><a href="#">Explore the courtyard</a></li>
+          <li><a href="#">Shop at the market place</a></li>
+          <li><a href="#">Go for a drink at the tavern</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </body>
