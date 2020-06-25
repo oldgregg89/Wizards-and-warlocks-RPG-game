@@ -31,6 +31,7 @@ __
 | action: items | 'click' items | a menu pops up and you make a decision on which item to use |
 | action: choose path | 'click' direction | 
 
+![Path Flowchart](assets/flowchart.png)
 
 
 ## Known Bugs
