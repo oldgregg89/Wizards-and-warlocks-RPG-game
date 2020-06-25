@@ -6,7 +6,7 @@ describe('Sword', () => {
   let knight;
 
   beforeEach(() => {
-    knight = new Character("knight");
+    knight = new Character("knight", "test");
     sword = new Sword();
   });
 

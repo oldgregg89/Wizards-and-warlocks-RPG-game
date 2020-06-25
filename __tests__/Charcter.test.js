@@ -9,12 +9,12 @@ describe('Character', () => {
   let reusableCharacter6;
 
   beforeEach(() => {
-    reusableCharacter = new Character("wizard");
-    reusableCharacter2 = new Character("knight");
-    reusableCharacter3 = new Character("rogue");
-    reusableCharacter4 = new Character("bandit");
-    reusableCharacter5 = new Character("goblin");
-    reusableCharacter6 = new Character("warlock");
+    reusableCharacter = new Character("wizard", "test");
+    reusableCharacter2 = new Character("knight", "test");
+    reusableCharacter3 = new Character("rogue", "test");
+    reusableCharacter4 = new Character("bandit", "test");
+    reusableCharacter5 = new Character("goblin", "test");
+    reusableCharacter6 = new Character("warlock", "test");
   });
 
   test('character object should have type "wizard", "knight", or "rogue"', () => {

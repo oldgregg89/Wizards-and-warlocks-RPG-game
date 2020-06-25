@@ -7,11 +7,36 @@
 </head>
 <body>
   <div id="background">
-    <img src="../" alt="">
     <div id="intro">
-      <p>welcome, and brief description of charcter build and game rules</p>
+      <h1>Wizards & Warlocks</h1>
+      <p>Welcome traveler, to the mythical lands of Erindale! Who might you be?</p>
     </div>
-    <form id="character-build"></form></div>
+      <form id="character-build">
+        <div id="class">
+          <h3>Choose your Hero!</h3>
+          <input type="radio" id="knight" name="hero">
+          <label for="knight">"I am a Knight"</label>
+          <input type="radio" id="wizard" name="hero">
+          <label for="wizard">"I am a Wizard"</label>
+          <input type="radio" id="rogue" name="hero">
+          <label for="rogue">"I am a Rogue"</label>
+        </div>
+        <div id="name">
+          <h3>What is you name Hero?</h3>
+          <input type="text">
+          <button type = "submit" class = "btn btn-warning">Ready for Adventure!</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <p>How Impressive, <span id="name-span"></span>!</p>
+      <p>Well I can tell that you have certainly traveled far and I might go as far to guess that this is your first visit to Erindale. You must be warned, tread lightly, fortunes are easily made in Erindale and more easily lost. Right now you stand before the gates to the small hamlet of Rothenburg. The inhabitants are not used to world travelers such as yourself. Once you pass these gates, be ambitious but be warned!</p>
+      <button id="ok">Enter Town Gates</button>
+    </div>
+    <div>
+      <h1>The Hamlet of Rothenburg</h1>
+      <p>Scenario: </p>
+    </div>
   </div>
 </body>
 </html>

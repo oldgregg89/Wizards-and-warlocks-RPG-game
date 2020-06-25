@@ -1,6 +1,7 @@
 export class Character {
-  constructor(type) {
+  constructor(type, name) {
     this.type = type; 
+    this.name = name;
     this.health = 10;
     this.itemsBag = [];
     this.addCharacterProperties();

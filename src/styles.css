@@ -1,7 +1,21 @@
-#background{
-  background-image: url(../assets/Title.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  width: auto;
+/* #castle-background {
   height: 100vh;
+  width: auto;
+} */
+
+body {
+  /* color: red */
+  
+}
+
+/* #background {
+  background-image: url(../assets/Title.jpg);
+  background-position: right;
+  height: 100vh;
+  width: auto;
+  background-repeat: no-repeat;
+} */
+
+#name {
+  
 }
