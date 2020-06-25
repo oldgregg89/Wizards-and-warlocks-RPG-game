@@ -5,6 +5,7 @@
 
 body {
   text-align: center;
+  color: rgb(70, 10, 10);
 }
 
 #content {
@@ -24,8 +25,10 @@ body {
   background-repeat: no-repeat;
 }
 
-#name {
-
+#distopia {
+heheight: 300px;
+  width: 400px;
+  border-radius: 10px;
 }
 
 #word-of-warning {

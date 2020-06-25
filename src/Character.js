@@ -22,22 +22,22 @@ export class Character {
       this.reverse = 7;
       this.special = 6;
     } else if (this.type === "goblin") {
-      this.health = 6
+      this.health = 6;
       this.defense = 1 + this.health;
       this.attack = 2;
     } else if (this.type === "bandit") {
-      this.health = 7
+      this.health = 7;
       this.defense = 1 + this.health;
       this.attack = 2;
     } else if (this.type === "warlock") {
-      this.health = 14
+      this.health = 14;
       this.defense = 3 + this.health;
       this.attack = 4;
     }
   }
 
   handItem(thing) {
-    this.itemsBag.push(thing)
+    this.itemsBag.push(thing);
     this.itemProperties();
   }
 
@@ -57,12 +57,12 @@ export class Character {
   
   //Perry attack
   knightSpecial(){
-    this.defense += this.special
+    this.defense += this.special;
   }
 
   //wizard fireball
   wizardSpecial(){
-    this.attack += this.special
+    this.attack += this.special;
   }
 
   //reverse
