@@ -35,14 +35,17 @@ export class Character {
     }
   }
 
-  itemProperties() {
+  handItem(thing) {
+    this.itemsBag.push(thing)
+    this.itemProperties();
+  }
 
-    return this.itemsBag[0].kind;
-    // this.itemsBag.forEach((element) => {
-    //   if (element.kind === "weapon") {
-    //     this.attack += element.damage;
-    //   }
-    // });
+  itemProperties() {
+    this.itemsBag.forEach((element) => {
+      if (element.kind === "weapon") {
+        this.attack += element.damage;
+      }
+    });
   }
 
   combatAction(Victim) {

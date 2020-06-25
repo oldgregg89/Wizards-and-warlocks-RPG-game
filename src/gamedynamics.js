@@ -1,8 +1,8 @@
-export class Gamedynamics {
-  let turn =
-  turn () {
-    if (Character === turn
+// export class Gamedynamics {
+//   let turn =
+//   turn () {
+//     if (Character === turn
 
-  }
+//   }
 
-}
+// }
