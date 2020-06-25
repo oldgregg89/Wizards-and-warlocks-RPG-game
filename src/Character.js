@@ -44,6 +44,8 @@ export class Character {
     this.itemsBag.forEach((element) => {
       if (element.kind === "weapon") {
         this.attack += element.damage;
+      } else if (element.kind === "armor") {
+        this.defense += element.protection;
       }
     });
   }
